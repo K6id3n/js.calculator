@@ -1,0 +1,14 @@
+body{
+
+    display: flex;
+    flex-direction: column  ;
+    text-align: center;
+    margin-top: 20dvh;
+    margin-left: 30dvw;
+    margin-right: 30dvw;
+    background-image: url(backround_forcalc.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+}
