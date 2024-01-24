@@ -1,5 +1,9 @@
 function inp(){
 
-    alert("helloworld");
+    let equation = prompt("Please enter the equation you would like to solve!", "");
+
+    
+
+    
 
 }
