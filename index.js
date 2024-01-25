@@ -1,37 +1,35 @@
 function inp() {
-
-    let equationType = prompt("Please enter the equation you would like to solve!", "");
-    switch (equationType) {
-        case "Addition":
-            add();
-            break;
-        case "Subtraction":
-            subtract();
-            break;
-        case "Multiplication":
-            multiply();
-            break;
-        case "Division":
-            divide();
-            break;
-        default:
-            alert("Error")
+    const display = prompt("Enter Equation","")
+    const splitDisplay = display.split('+');
+    if (splitDisplay.length === 2){
+        
+        const n1 = parseFloat(splitDisplay[0]);
+        const n2 = parseFloat(splitDisplay[1]);
+        
+        console.log(`n1: ${n1}, n2: ${n2}`)
+        checkValue(n1, n2);
+    } else {
+        console.log('INVALID EQUATION FORMAT')
     }
+    function checkValue(n1, n2){
+        if (display.includes("+")){
+            let result = (n1 + n2)
+            alert(result)
+        } else if (display.includes("-")){
+            let result = (n1 - n2)
+            alert(result)
 
-}
+        } else if (display.includes("*")){
+            let result = (n1 * n2)
+            alert(result)
 
-function add(){
-    let x = a + b 
-}
-function subtract(){
-    let x = a - b
-}
-function multiply(){
-    let x = a * b
-}
-function divide(){
-    let x = a / b
-}
+        } else if (display.includes("/")){
+            let result = (n1 / n2)
+            alert(result)
 
-x = 10
-document.getElementById("out").alert = x;
+        } else {
+            alert("NO OPERATOR FOUND")
+        }
+
+    }
+}99
