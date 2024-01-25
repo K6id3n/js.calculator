@@ -3,14 +3,18 @@ body{
     display: flex;
     flex-direction: column  ;
     text-align: center;
-    margin-top: 20dvh;
-    margin-left: 30dvw;
-    margin-right: 30dvw;
-    background-image: url(backround_forcalc.avif);
+    background-image: url(calculator_backround.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+    
+}
 
+.content{
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+    padding: 10px;
 }
 
 h2{
@@ -19,7 +23,10 @@ h2{
 
 .btn{
 
-    background-color: lightpink;
+    background-color: rgba(255, 166, 0, 0.5);
     height: 5dvh;
-
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+    border-radius: 10px;
+    
 }
