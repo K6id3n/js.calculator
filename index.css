@@ -3,8 +3,10 @@ body{
     display: flex;
     flex-direction: column  ;
     text-align: center;
-    background-image: url(calculator_backround.jpg);
-    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: url('calculator_backround.jpg') center center fixed;
     background-size: cover;
     color: white;
     overflow: hidden;
@@ -33,6 +35,6 @@ h2{
 
 @media (max-width: 600px) {
     body {
-        background-color: blue;
+        background-color: rgb(255, 187, 0);
     }
 }
