@@ -7,7 +7,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    
+    overflow: hidden;
 }
 
 .content{
@@ -29,4 +29,10 @@ h2{
     font-size: xx-large;
     border-radius: 10px;
     
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: blue;
+    }
 }
